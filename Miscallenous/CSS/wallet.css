@@ -1,0 +1,46 @@
+.styled-table {
+    border-collapse: collapse;
+    /* margin: 25px 0; */
+    border-collapse:collapse;
+    border-spacing:0 15px;
+    /* min-width: 120px; */
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+    font-size: 18px;
+}
+
+table{
+    border-radius: 10px;
+    
+
+}
+
+td{
+    padding: 10px 15px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.column{
+    overflow: auto;
+    height: 50vh;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="shortcut icon" type="image/png" href="../Images/circlebank logo.png">
+    <link rel="stylesheet" href="../CSS/transaction.css">
+    <style>
+        table {
+            border-collapse: collapse;
+             width: 80%;
+}
+        td, th {
+        border: 1px solid black;
+        padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2;}
+
+        tr:hover {background-color: #ddd;}
+
+        th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #283618;
+        color: white;
+        }
+    </style>
+</head>
+<body onload="startDate()">
+    <section class="dash-title-and-date">
+            <h1 style="font-size:35px; ">Transactions</h1>
+            <div id="date"></div>
+        </section>
+
+        <article>
+
+            <br> <br>
+            <section class="table">
+                <table border="1" width="90%" cellspacing="5px" cellpadding="10px">
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                    </tr>
+
+                    <tr>
+                        <td>19 March 2022</td>
+                        <td>Jasmine's Birthday Lunch</td>
+                        <td>-€310.00</td>
+                        <td>Shopping</td>
+                        <!-- savings, cash at hand,  -->
+                    </tr>
+                    <tr>
+                        <td>18 March 2002</td>
+                        <td>Netflix Subscription</td>
+                        <td>-€15.00</td>
+                        <td>Subscription</td>
+                    </tr>
+                    <tr>
+                        <td>16 March 2002</td>
+                        <td>Salary</td>
+                        <td>+€30,000.00</td>
+                        <td>Income</td>
+                    </tr>
+                    <tr>
+                        <td>16 March 2002</td>
+                        <td>WiFi Subscription</td>
+                        <td>-€100.00</td>
+                        <td>Subscriptions</td>
+                    </tr>
+                    <tr>
+                        <td>15 March 2002</td>
+                        <td>Brand Deal</td>
+                        <td>+€3,000.00</td>
+                        <td>Income</td>
+                    </tr>
+                    <tr>
+                        <td>13 March 2002</td>
+                        <td>Groceries From The Store</td>
+                        <td>-€400.00</td>
+                        <td>Groceries</td>
+                    </tr>
+                    <tr>
+                        <td>12 March 2002</td>
+                        <td>Gym Membership</td>
+                        <td>-€200.00</td>
+                        <td>Healthcare</td>
+                    </tr>
+                    <tr>
+                        <td>12 March 2002</td>
+                        <td>Referrals</td>
+                        <td>+€200.00</td>
+                        <td>Income</td>
+                    </tr>
+                    <tr>
+                        <td>11 March 2002</td>
+                        <td>Affiliate Marketing</td>
+                        <td>+€150.00</td>
+                        <td>Income</td>
+                    </tr>
+                    <tr>
+                        <td>09 March 2002</td>
+                        <td>Tutoring</td>
+                        <td>+€3,000.00</td>
+                        <td>Income</td>
+                    </tr>
+                    <tr>
+                        <td>08 March 2002</td>
+                        <td>Taxes</td>
+                        <td>-€140.00</td>
+                        <td>Expenses</td>
+                    </tr>
+                    <tr>
+                        <td>08 March 2002</td>
+                        <td>Hulu</td>
+                        <td>-€20.00</td>
+                        <td>Subscriptions</td>
+                    </tr>
+                    <tr>
+                        <td>06 March 2002</td>
+                        <td>Hair Appointment</td>
+                        <td>-€400.00</td>
+                        <td>Expenses</td>
+                    </tr>
+                    <tr>
+                        <td>05 March 2002</td>
+                        <td>Danny's Road Trip</td>
+                        <td>-€200.00</td>
+                        <td>Expenses</td>
+                    </tr>
+                </table>
+            </section>
+
+        </article>
+
+    
+    <script>
+        function startDate() {
+        var d = new Date();
+        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        document.getElementById("date").innerHTML = days[d.getDay()]+" | "+d.getDate()+" "+months[d.getMonth()]+" "+d.getFullYear();
+        }
+    startDate();
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* 
+    COLORS: 
+    #A1CCA5
+    #8FB996 
+    #709775
+    #415D43
+    #111D13
+    #191a19
+    #1e5128
+    #4e9f3d
+    #ffe6e6
+    #f8f9fa
+
+    font-family: 'Lato', sans-serif;
+    font-family: gt walsheim;
+*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); */
+
+body {
+    background-color: #D6D6DE;
+    /* font-family: 'Noto Sans', sans-serif */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 3%;
+    /* margin: 50px; */
+}
+
+.fa-ellipsis-v {
+    font-size: 10px;
+    color: #C2C2C4;
+    margin-top: 6px;
+    cursor: pointer
+}
+
+.text-dark {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 13px;
+    letter-spacing: 0.5px
+}
+
+.card-bottom {
+    background: #414833;
+    border-radius: 6px
+}
+
+.flex-column {
+    color: black;
+    font-size: 13px
+}
+
+.flex-column p {
+    letter-spacing: 1px;
+    font-size: 18px
+}
+
+.btn-secondary {
+    height: 40px !important;
+    margin-top: 3px
+}
+
+.btn-secondary:focus {
+    box-shadow: none
+}

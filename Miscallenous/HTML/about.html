@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../Images/circlebank logo.png"
+    />
+    <!-- <link rel="stylesheet" href="../CSS/all-options.css" /> -->
+    <!-- <link rel="stylesheet" href="../CSS/homepage.css" /> -->
+    <!-- <link rel="stylesheet" href="../CSS/about.css" /> -->
+    <style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Smooch Sans', sans-serif;
+  margin: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 50px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #606c38;;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+</style>
+  </head>
+  <body onload="startDate()">
+
+    <center>
+      <section class="dash-title-and-date">
+        <h1 style="font-size: 50px">About CircleBank</h1>
+        <div id="date"></div>
+      </section>
+    </center>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Why CircleBank?</b></h1>
+      <p style="font-size:25px;"><span style="font-size:36px; font-weight:bold">Vision</span> To become the leading Nigerian, technology-driven, global financial institution that provides distinctive range of financial services..</p>
+    </div>
+    <div class="column-33">
+        <img src="../Images/pexels-maitree-rimthong-1602726.jpg" width="450" height="500">
+    </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="../Images/pexels-worldspectrum-844124.jpg" alt="App" width="450" height="500">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Mission</b></h1>
+      <p style="font-size:25px;"><span style="font-size:36px; font-weight:bold">Mission</span>To build the good brand into a reputable international financial institution recognized for innovation, superior performance and creation of premium value for all stakeholders.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Core Values</b></h1>
+      <p><span style="font-size:27px">Integrity, Professionalism, Corporate Governance, Loyalty and Excellent Service.</p>
+    </div>
+    <div class="column-33">
+        <img src="../Images/pexels-pixabay-164501.jpg" width="450" height="500" >
+    </div>
+  </div>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="../Images/bankk.jpg" alt="App" width="450" height="500">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Excellence</b></h1>
+      <p style="font-size:25px;"><span style="font-size:36px; font-weight:bold">Excellence</span>We stand out from the crowd, always refreshing, always beyond the ordinary.We are reliable, what we say is what we do; trust us to always do what is right. We enjoy working together to fulfil customers' needs, building mutually rewarding relationships.</p>
+    </div>
+  </div>
+</div>
+
+    <script>
+      function startDate() {
+        var d = new Date();
+        var days = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        var months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        document.getElementById("date").innerHTML =
+          days[d.getDay()] +
+          " | " +
+          d.getDate() +
+          " " +
+          months[d.getMonth()] +
+          " " +
+          d.getFullYear();
+      }
+      startDate();
+    </script>
+  </body>
+</html>

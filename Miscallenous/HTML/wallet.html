@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/all-options.css">
+    <link rel="shortcut icon" type="image/png" href="../Images/circlebank logo.png">
+    <link rel="stylesheet" href="../CSS/wallet.css">
+    <title>Wallet</title>
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+    /* section .detailed-summary{
+        color: white;
+    } */
+
+   .detailed-summary h2{
+       font-size: 20px;
+       
+   }
+   .detailed-summary p{
+       font-size: 30px;
+       font-weight: bold;
+   }
+
+    .detailed-summary .column {
+    /* float:; */
+    width: 32.5%;
+    padding: 10px;
+    height: 200px; 
+    border-radius: 10px;
+    margin: 5px;
+    }
+
+    .detailed-summary .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+    .detailed-summary .column {
+    width: 100%;
+    }
+    }
+
+    .column {
+    float: left;
+    width: 32.5%;
+    padding: 10px;
+    height: 470px;
+    border-radius: 10px;
+    margin: 5px; }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    .column h2{
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    }
+    }
+
+    .detailed-summary .summary-deets{
+         display: flex;
+  justify-content: center;
+    }
+    </style>
+</head>
+<body onload="startDate()">
+    <article>
+        <section class="dash-title-and-date">
+            <h1 style="font-size:35px; ">Wallet</h1>
+            <div id="date"></div>
+        </section>
+
+        <br> <br>
+
+        <section class="detailed-summary">
+            <div class="row">
+            <div class="column" style="background-color:#606c38;">
+            <h2>Income</h2>
+            <p>€200,000.00</p>
+            </div>
+            <div class="column" style="background-color:#283618;">
+            <h2>Expenses</h2>
+            <p>€145,000.00</p>
+            </div>
+            <div class="column" style="background-color:#dda15e;">
+            <h2>Savings</h2>
+            <p>€1,567,300.00</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="summary-deets">
+            <div class="row">
+            <div class="column" style="border:2px solid #606c38; ">
+                <h2 style="color:#606c38;">Income</h2>
+                <table class="styled-table" border=1 bordercolor:#606c38;>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th> 
+                        <th>Date</th>
+                        <th>Net Amount</th>
+                    </tr>
+
+                    <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0002</td>
+                        <td>Salary</td>
+                        <td>25 March 2022</td>
+                        <td>€5,000.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0003</td>
+                        <td>Dividends</td>
+                        <td>03 March 2022</td>
+                        <td>€2,850.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0004</td>
+                        <td>Tutoring</td>
+                        <td>20 March 2022</td>
+                        <td>€4,300.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0005</td>
+                        <td>Miscellaneous Savings</td>
+                        <td>06 March 2022</td>
+                        <td>€800.00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="column" style="border:2px solid #283618; ">
+                <h2 style="color:#283618;">Expenses</h2>
+                <table class="styled-table" border=1 >
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th> 
+                        <th>Date</th>
+                        <th>Net Amount</th>
+                    </tr>
+
+                    <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0002</td>
+                        <td>Salary</td>
+                        <td>25 March 2022</td>
+                        <td>€5,000.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0003</td>
+                        <td>Dividends</td>
+                        <td>03 March 2022</td>
+                        <td>€2,850.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0004</td>
+                        <td>Tutoring</td>
+                        <td>20 March 2022</td>
+                        <td>€4,300.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0005</td>
+                        <td>Miscellaneous Savings</td>
+                        <td>06 March 2022</td>
+                        <td>€800.00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="column" style="border:2px solid #dda15e; ">
+                <h2 style="color:#dda15e;">Savings</h2>
+                <table class="styled-table" border=1 bordercolor:#606c38; sty>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th> 
+                        <th>Date</th>
+                        <th>Net Amount</th>
+                    </tr>
+
+                    <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr>
+                     <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr> <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr> <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr> <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr> <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr> <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr> <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr> <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr> <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr> <tr>
+                        <td>0001</td>
+                        <td>Sponsorships</td>
+                        <td>11 March 2022</td>
+                        <td>€2,000.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0002</td>
+                        <td>Salary</td>
+                        <td>25 March 2022</td>
+                        <td>€5,000.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0003</td>
+                        <td>Dividends</td>
+                        <td>03 March 2022</td>
+                        <td>€2,850.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0004</td>
+                        <td>Tutoring</td>
+                        <td>20 March 2022</td>
+                        <td>€4,300.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>0005</td>
+                        <td>Miscellaneous Savings</td>
+                        <td>06 March 2022</td>
+                        <td>€800.00</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </section>
+    </article>
+
+    <script>
+        function startDate() {
+        var d = new Date();
+        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        document.getElementById("date").innerHTML = days[d.getDay()]+" | "+d.getDate()+" "+months[d.getMonth()]+" "+d.getFullYear();
+        }
+    startDate();
+</script>
+    
+</body>
+</html>

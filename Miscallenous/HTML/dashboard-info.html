@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../Images/circlebank logo.png">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../CSS/dashboard-main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  padding: 3px;
+  height: 120px; 
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.acct-summary{
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+    
+</head>
+<body onload="startDate()">
+    <section class="dashboard-body">
+        <section class="dash-title-and-date">
+            <h1 style="font-size:35px;">Dashboard</h1>
+            <div id="date"></div>
+        </section>
+
+        <section class="acct-balance">
+            <div class="card p-3">
+            <div class="card-bottom pt-3 px-3 mb-2">
+                <div class="d-flex flex-column"><span style="font-size:20px; ">Your balance:</span>
+                    <p style="font-size:40px; text-decoration:bold; ;">&euro; <span class="text-white" style="font-size:40px;  font-weight: bold;">88,989</span></p>
+                    <p style="font-size:20px; ">*******1234</p>
+                </div> 
+            </div>
+            </div>
+        </section>
+
+        <section class="acct-summary">
+            <div class="row">
+            <div class="column" style="background-color:#606c38;">
+            <h2>Groceries</h2>
+            <p>€370.43</p>
+            </div>
+            <div class="column" style="background-color:#283618;">
+            <h2>Healthcare</h2>
+            <p>€532.65</p>
+            </div>
+            <div class="column" style="background-color:#fefae0;">
+            <h2>Shopping</h2>
+            <p>€876.00</p>
+            </div>
+            <div class="column" style="background-color:#dda15e;" >
+            <h2>Subscriptions</h2>
+            <p>€434.00</p>
+            </div>
+            </div>
+        </section>
+
+        <br> <br>
+
+        <section class="bar-chart">
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+            <script>
+            var xValues = ["Groceries", "Healthcare", "Shopping", "Subscriptions"];
+            var yValues = [370.43, 532.65, 876, 434];
+            var barColors = ["#606c38", "#283618","#fefae0","#dda15e"];
+
+            new Chart("myChart", {
+            type: "bar",
+            data: {
+            labels: xValues,
+            datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+            }]
+            },
+            options: {
+            legend: {display: false},
+            title: {
+            display: true,
+            text: "Monthly Expenditure (€) "
+            }
+            }
+            });
+            </script>
+        </section>
+
+    </section>
+
+    
+
+
+
+    <script>
+        function startDate() {
+        var d = new Date();
+        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        document.getElementById("date").innerHTML = days[d.getDay()]+" | "+d.getDate()+" "+months[d.getMonth()]+" "+d.getFullYear();
+  }
+startDate();
+</script>
+</body>
+</html>

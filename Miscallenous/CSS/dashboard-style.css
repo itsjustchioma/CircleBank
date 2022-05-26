@@ -1,0 +1,126 @@
+/* 
+    COLORS: 
+    #A1CCA5
+    #8FB996 
+    #709775
+    #415D43
+    #111D13
+    #191a19
+    #1e5128
+    #4e9f3d
+    #ffe6e6
+    #f8f9fa
+
+    font-family: 'Lato', sans-serif;
+    font-family: gt walsheim;
+*/
+
+body{
+    font-family: 'GT Walsheim Pro';
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* .vertical-line{
+    border-left: 2px solid black;
+    height: 800px;
+    position: fixed;
+    left: 30.5%;
+    /* margin-left: -3px; */
+    /* top: 0; */
+/* }  */
+
+/* FOR LOGO
+.img-logo{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -20px;
+} */
+
+.sidebar-container{
+    margin:0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+    position: fixed;
+    height: 98%;
+    overflow: auto ;
+
+    /* box-shadow:0 2px 3px 0px rgba(0,0,0,0.25); */
+    border-radius:3px;
+    transition:.2s all; 
+}
+
+.sidebar-container a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* .sidebar-container a.active {
+    background-color: #415D43;
+    color: whitesmoke;
+}
+
+/* MOUSE HOVER */
+/* .sidebar-container a:hover:not(.active){
+    background-color: #555;
+    color: white;
+} */
+
+a svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.option::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.option:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.option::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #415D43;
+    z-index: -1;
+    transition: transform 1s ease;
+}
+
+.option {
+    position: relative;
+    font-size: 1rem;
+}
+
+/* html {
+  block-size: 100%;
+  inline-size: 100%;
+} */
+
+/* body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+} */
+
+/* @media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+} */
+

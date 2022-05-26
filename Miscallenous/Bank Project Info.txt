@@ -1,0 +1,9 @@
+1. Must include a registration form(sign up/log in). Validation using JS
+2. Pages that must be included: 
+homepage 
+	-must include the date (Jan. 17, 2022)
+	-
+about 
+contact us 
+services/products 
+faq
